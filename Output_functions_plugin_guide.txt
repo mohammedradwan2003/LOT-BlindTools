@@ -1,0 +1,20 @@
+Output functions plugin guide
+Navigation commands for the output functions plugin
+Control Shift Y: Reads the top line in the output window and takes your focus to it
+Control Shift N: Reads the bottom line in the output window and takes your focus to it
+Control Shift U: Reads the previous line to the currently focused line
+Control Shift I: Reads the currently focused line
+Control Shift O: Reads the next line to the currently focused line
+Control key with 1 to 0: Reads the last line to the last 10th line respectively
+Control Shift H: Tells the line number from the over all number of lines received
+Output management commands:
+Control Shift C: Clears the main output buffer
+Control Alt Shift C: Clears the secondary notepad output buffer (Access this from the main window by pressing Control Tab, press it again to go back to the main window)
+Control Alt Enter: Toggles the interrupt text mode of the screen reader
+Control Alt O, turns on/off the secondary output notepad window (Do this if the secondary output window is lagging the Mushclient)
+Selection commands
+Note: Take the focus to the line you want to start copying from using the navigation commands and press the selection command once. Take it to the line you want to end copy at and press the selection command once more. The text will be copied to clipboard.
+Control Shift Space: Normal copy command, copies the whole text as it is shown in the output window
+Control Alt Space: Copies the text with color codes (Note for this new feature to work, currently you will have to do config -screenreader and config +ansi. It may change and this guide will be updated accordingly.)
+Control Alt Shift Space: Copies the text without any line break in between. Useful if you'd like to copy a paragraph of text without separating it on different lines.
+If there's any issue with the plugin, please contact @adrian. The copy color code plugin was a massive help to make the copy with color function of this plugin possible.
